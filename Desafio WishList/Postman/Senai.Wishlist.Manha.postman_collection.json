@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "c847411d-3383-49a5-8b1d-76530939e08c",
+		"name": "Senai.Wishlist.Manha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Usuarios.Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"username\": \"Luca\",\r\n        \"email\": \"luca@gmail.com\",\r\n        \"senha\": \"luca@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.ListarId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuarios/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuarios",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": 4,\r\n    \"username\": \"Lucas\",\r\n    \"email\": \"lucas@gmail.com\",\r\n    \"senha\": \"lucas@123\",\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/usuarios/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuarios/excluir/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuarios",
+								"excluir",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.ListarDesejos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/usuarios/desejos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios",
+								"desejos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Desejos",
+			"item": [
+				{
+					"name": "Desejos.Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Desejos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Desejos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desejos.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idUsuario\": 3,\r\n        \"descricao\": \"Suco de Uva\",\r\n        \"dataCadastro\": \"2021-10-26T00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Desejos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Desejos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desejos.ListarId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Desejos/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Desejos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desejos.Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idDesejo\": 6,\r\n    \"idUsuario\": 3,\r\n    \"descricao\": \"Suco de Uva (Bem Gelado)\",\r\n    \"dataCadastro\": \"2021-10-26T00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/desejos/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"desejos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desejos.Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Desejos/excluir/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Desejos",
+								"excluir",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.MeusDesejos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZ2Vsb0BnbWFpbC5jb20iLCJqdGkiOiIxIiwiZXhwIjoxNjM1MjgwNDA2LCJpc3MiOiJ3aXNobGlzdCIsImF1ZCI6Indpc2hsaXN0In0._Q8c1qUR3pm0_1PYmMWxIOptYsc4i1e7FGXMAH8KukA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/desejos/meus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"desejos",
+								"meus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"angelo@gmail.com\",\r\n    \"senha\" : \"angelo@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/login/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

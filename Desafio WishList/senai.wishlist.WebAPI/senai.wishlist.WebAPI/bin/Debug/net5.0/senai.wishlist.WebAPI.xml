@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.wishlist.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:senai.wishlist.WebAPI.Interfaces.IDesejoRepository">
+            <summary>
+            Interface responsável pelo repositório DesejoRepository
+            </summary>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IDesejoRepository.Listar">
+            <summary>
+            Lista todos os Desejos
+            </summary>
+            <returns>Lista de Desejos</returns>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IDesejoRepository.ListarId(System.Int32)">
+            <summary>
+            Busca um Desejo através de seu ID
+            </summary>
+            <param name="id">ID do Desejo buscado</param>
+            <returns>O Desejo buscado</returns>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IDesejoRepository.Cadastrar(senai.wishlist.WebAPI.Domains.Desejo)">
+            <summary>
+            Cadastra um novo Desejo
+            </summary>
+            <param name="novoDesejo">Objeto novoDesejo com os novos dados</param>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IDesejoRepository.Atualizar(System.Int32,senai.wishlist.WebAPI.Domains.Desejo)">
+            <summary>
+            Atualiza um Desejo existente passando o id pela URL da requisição
+            </summary>
+            <param name="idDesejo">id do Desejo que será atualizado</param>
+            <param name="DesejoAtualizado">Objeto DesejoAtualizado com os novos dados</param>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IDesejoRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Desejo existente
+            </summary>
+            <param name="idDesejo">ID do Desejo deletado</param>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IDesejoRepository.MeusDesejos(System.Int32)">
+            <summary>
+            Lista todos os Desejos que um determinado Usuario possui
+            </summary>
+            <param name="idUsuario">ID do usuário que possui os Desejos listados</param>
+            <returns>Uma lista de Desejos</returns>
+        </member>
+        <member name="T:senai.wishlist.WebAPI.Interfaces.IUsuarioRepository">
+            <summary>
+            Interface responsável pelo repositório UsuarioRepository
+            </summary>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            Lista todos os Usuarios
+            </summary>
+            <returns>Lista de Usuarios</returns>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IUsuarioRepository.ListarId(System.Int32)">
+            <summary>
+            Busca um Usuario através de seu ID
+            </summary>
+            <param name="id">ID do Usuario buscado</param>
+            <returns>O Usuario buscado</returns>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IUsuarioRepository.Cadastrar(senai.wishlist.WebAPI.Domains.Usuario)">
+            <summary>
+            Cadastra um novo Usuario
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario com os novos dados</param>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IUsuarioRepository.Atualizar(System.Int32,senai.wishlist.WebAPI.Domains.Usuario)">
+            <summary>
+            Atualiza um Usuario existente passando o id pela URL da requisição
+            </summary>
+            <param name="idUsuario">id do Usuario que será atualizado</param>
+            <param name="UsuarioAtualizado">Objeto UsuarioAtualizado com os novos dados</param>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Usuario existente
+            </summary>
+            <param name="idUsuario">ID do Usuario deletado</param>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Busca um usuário através de seu email e senha
+            </summary>
+            <param name="email">Email do usuário buscado</param>
+            <param name="senha">Senha do usuário buscado</param>
+            <returns>Usuário buscado</returns>
+        </member>
+        <member name="M:senai.wishlist.WebAPI.Interfaces.IUsuarioRepository.ListarComDesejos">
+            <summary>
+            Lista todos os Usuarios com suas respectivas listas de Desejos
+            </summary>
+            <returns>Uma lista de Usuarios com seus Desejos</returns>
+        </member>
+    </members>
+</doc>
